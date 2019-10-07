@@ -8,12 +8,13 @@ https://github.com/edwardyuendev/thread_library_no_thread_safety
 3. learn about thread safety, mutual exclusion, critical sections, and etc,.
 4. improve mastery of the C++ language
 
-In this project, I added additional functionality on top of my basic Threads library. This includes:
+# Changes/differences from basic thread library
+In this project, I added additional functionality to my basic thread library including:
 1. adding locking mechanisms to the library that can prevent thread switching
 2. implementing pthread_join() to allow threads to wait on a specific thread
 3. adding semaphore support by implementing functions from semaphore.h
    - this includes: sem_init(), sem_destroy(), sem_wait(), and sem_post()
-4. significant changes to pthread_create() and pthread_exit() to work with the new added functionality
+4. significant changes to pthread_create() and pthread_exit()
 5. changes in the scheduling function
 
 # How To Run
@@ -23,4 +24,4 @@ In this project, I added additional functionality on top of my basic Threads lib
 
 # Restrictions: 
 - The thread library was designed to work specifically on Linux (Fedora OS)
-- The thread library includes pointer mangling for the purposes of running/testing the thread library on lab Linux computers
+- The thread library includes pointer mangling for the purposes of running/testing on lab Linux computers
